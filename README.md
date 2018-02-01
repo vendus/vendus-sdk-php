@@ -5,7 +5,7 @@ This repository contains the open source PHP SDK that allows you to access the [
 
 ## Installation
 
-The Vendus PHP SDK can be installed with [Composer](https://getcomposer.org/). Run this command:
+The Vendus SDK for PHP can be installed with [Composer](https://getcomposer.org/). Run this command:
 
 ```sh
 composer require vendus/vendus-sdk-php
