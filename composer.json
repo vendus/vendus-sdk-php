@@ -1,0 +1,11 @@
+{
+    "name": "vendus/vendus-sdk-php",
+    "type": "library",
+    "description": "Vendus SDK for PHP",
+    "keywords": ["vendus","sdk","api"],
+    "homepage": "https://www.vendus.pt/",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.0"
+    }
+}
