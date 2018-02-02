@@ -2,7 +2,7 @@
 
 This repository contains the open source PHP SDK that allows you to access the [Vendus API](https://www.vendus.pt/ws/) from your PHP app.
 
---
+---
 
 # Getting Started
 
@@ -14,7 +14,7 @@ To run the SDK, your system will need to meet some minimum requirements, includi
 We highly recommend having it compiled with the cURL extension and cURL 7.16.2+ compiled with a TLS backend (e.g., NSS or OpenSSL).
 
 ## Install the SDK
-Using [Composer] is the recommended way to install the Vendus SDK for PHP. 
+Using [Composer](http://getcomposer.org) is the recommended way to install the Vendus SDK for PHP. 
 The SDK is available via [Packagist](http://packagist.org) under the [`vendus/vendus-sdk-php`](https://packagist.org/packages/vendus/vendus-sdk-php) package. 
 Run this command:
 ```sh
