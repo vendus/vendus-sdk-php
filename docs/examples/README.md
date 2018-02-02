@@ -55,6 +55,6 @@ The following examples demonstrate how you would accomplish common tasks with th
   - [Listing Taxes](./examples/taxes_list.md)
   - [Listing Exemptions](./examples/taxes_exemptions_list.md)
 - **Discount Cards**
-    - [Creating a Discount Card](./examples/discount_card_create.md)
-    - [Listing Discount Cards](./examples/discount_card_list.md)
-    - [Retrieving a Discount Card](./examples/discount_card_detail.md)
+    - [Creating a Discount Card](./examples/discount_cards_create.md)
+    - [Listing Discount Cards](./examples/discount_cards_list.md)
+    - [Retrieving a Discount Card](./examples/discount_cards_detail.md)
