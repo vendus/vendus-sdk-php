@@ -9,10 +9,12 @@ Before starting, please signup for a [Vendus](https://www.vendus.pt/) account, i
 
 ## Minimum requirements
 To run the SDK, your system will need to meet some minimum requirements, including having **PHP >= 5.4**.
+
 We highly recommend having it compiled with the cURL extension and cURL 7.16.2+ compiled with a TLS backend (e.g., NSS or OpenSSL).
 
 ## Install the SDK
 Using [Composer](http://getcomposer.org) is the recommended way to install the Vendus SDK for PHP. 
+
 The SDK is available via [Packagist](http://packagist.org) under the [`vendus/vendus-sdk-php`](https://packagist.org/packages/vendus/vendus-sdk-php) package. 
 
 Run this command:
