@@ -1,6 +1,7 @@
 # Vendus SDK for PHP
 
 This repository contains the open source PHP SDK that allows you to access the [Vendus API](https://www.vendus.pt/ws/) from your PHP app.
+Check our [documentation](./docs) for detailed information, usage and examples.
 
 
 ## Installation
