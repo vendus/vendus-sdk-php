@@ -1,6 +1,6 @@
 # Vendus SDK for PHP
 
-The Vendus SDK for PHP is a library with powerful features that enable PHP developers to easily integrate with [Vendus API](https://www.vendus.pt/ws/), made available by [Vendus](https://www.vendus.pt/), an online invoicing software. 
+The Vendus SDK for PHP is a opensource library that enables PHP developers to easily integrate with [Vendus API](https://www.vendus.pt/ws/), made available by [Vendus](https://www.vendus.pt/), an online invoicing software. 
 
 By using this API, users can easily integrate third party software with Vendus.
 
