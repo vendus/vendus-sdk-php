@@ -11,6 +11,6 @@ The Vendus SDK for PHP can be installed with [Composer](https://getcomposer.org/
 composer require vendus/vendus-sdk-php
 ```
 
-## Usage
+## Disclaimer
 
-Development in progress :)
+This SDK is currenly being developed and should not be used in production. It will be ready in a couple of days.
