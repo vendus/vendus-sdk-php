@@ -32,7 +32,7 @@ The following examples demonstrate how you would accomplish common tasks with th
   - [Retrieving a Client](./examples/clients_detail.md)
   - [Updating a Client](./examples/clients_update.md)
 
-- **Products**
+- **Products, Categories and Brands**
   - [Creating a Product](./examples/products_create.md)
   - [Listing Products](./examples/products_list.md)
   - [Retrieving a Product](./examples/products_detail.md)
@@ -52,7 +52,7 @@ The following examples demonstrate how you would accomplish common tasks with th
     - [Listing Units](./examples/units_list.md)
     - [Retrieving a Unit](./examples/units_detail.md)
 
-- **Stores**
+- **Stores and Registers**
   - [Listing Stores](./examples/stores_list.md)
   - [Retrieving a Store](./examples/stores_detail.md)
   - Registers
@@ -62,7 +62,7 @@ The following examples demonstrate how you would accomplish common tasks with th
       - [Listing Movements](./examples/registers_movements_list.md)
       - [Create a Movement](./examples/registers_movements_create.md)
 
-- **Taxes**
+- **Taxes and Exemptions**
   - [Listing Taxes](./examples/taxes_list.md)
   - [Listing Exemptions](./examples/taxes_exemptions_list.md)
 
