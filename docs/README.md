@@ -2,65 +2,53 @@
 
 The Vendus SDK for PHP is a library with powerful features that enable PHP developers to easily integrate with [Vendus API](https://www.vendus.pt/ws/), an API made available by [Vendus](https://www.vendus.pt/), an online invoicing software. By using this API, users can easily integrate third party software with Vendus.
 
-Check out some of the examples below.
+Check out some [examples](./examples).
 
 ---
 
-## Examples
+# Getting started with the Vendus SDK for PHP
 
-The following examples demonstrate how you would accomplish common tasks with the Vendus SDK for PHP.
+Whether you're developing an online shop, creating a Vendus Canvas app or Page tab, the Vendus SDK for PHP does all the heavy lifting for you making it as easy as possible to deeply integrate into the Vendus platform.
 
-- **Documents**
-  - [Creating an Invoice](./examples/documents_create.md)
-  - [Retrieving an Invoice](./examples/documents_detail.md)
-  - [Registering a Payment](./examples/documents_receipt.md) aka Creating a Receipt
-  - [Listing Documents](./examples/documents_list.md)
-  - [Canceling an Invoice](./examples/documents_credit_note.md) aka Creating a Credit Note
-  - [Canceling a Payment](./examples/documents_receipt_cancel.md)
-  - [Listing Payment Methods](./examples/documents_payment_methods.md)
-  - [Listing Document Types](./examples/documents_document_types.md)
-- **Account and Users**
-  - [Retrieving account details](./examples/account.md)
-  - [Listing Users](./examples/account_users_list.md)
-  - [Retrieving a User](./examples/account_user.md)
-  - [Updating a User](./examples/account_user_update.md)
-- **Clients**
-  - [Creating a Client](./examples/clients_create.md)
-  - [Listing Clients](./examples/clients_list.md)
-  - [Retrieving a Client](./examples/clients_detail.md)
-  - [Updating a Client](./examples/clients_update.md)
-- **Products, Categories and Brands**
-  - [Creating a Product](./examples/products_create.md)
-  - [Listing Products](./examples/products_list.md)
-  - [Retrieving a Product](./examples/products_detail.md)
-  - [Updating a Product](./examples/products_update.md)
-  - Categories
-    - [Creating a Category](./examples/categories_create.md)
-    - [Listing Categories](./examples/categories_list.md)
-    - [Retrieving a Category](./examples/categories_detail.md)
-  - Brands
-    - [Creating a Brand](./examples/brands_create.md)
-    - [Listing Brands](./examples/brands_list.md)
-    - [Retrieving a Brand](./examples/brands_detail.md)
-  - Price Groups
-    - [Listing Price Groups](./examples/price_groups_list.md)
-    - [Retrieving a Price group](./examples/price_groups_detail.md)
-  - Units
-    - [Listing Units](./examples/units_list.md)
-    - [Retrieving a Unit](./examples/units_detail.md)
-- **Stores and Registers**
-  - [Listing Stores](./examples/stores_list.md)
-  - [Retrieving a Store](./examples/stores_detail.md)
-  - Registers
-    - [Listing Registers](./examples/registers_list.md)
-    - [Retrieving a Register](./examples/registers_detail.md)
-    - Movements
-      - [Listing Movements](./examples/registers_movements_list.md)
-      - [Create a Movement](./examples/registers_movements_create.md)
-- **Taxes and Exemptions**
-  - [Listing Taxes](./examples/taxes_list.md)
-  - [Listing Exemptions](./examples/taxes_exemptions_list.md)
-- **Discount Cards**
-    - [Creating a Discount Card](./examples/discount_card_create.md)
-    - [Listing Discount Cards](./examples/discount_card_list.md)
-    - [Retrieving a Discount Card](./examples/discount_card_detail.md)
+## Autoloading & namespaces
+
+The Vendus SDK for PHP is coded in compliance with [PSR-4](http://www.php-fig.org/psr/psr-4/). This means it relies heavily on namespaces so that class files can be loaded for you automatically.
+
+It would be advantageous to familiarize yourself with the concepts of [namespacing](http://php.net/manual/en/language.namespaces.rationale.php) and [autoloading](http://php.net/manual/en/function.spl-autoload-register.php) if you are not already acquainted with them.
+
+## System requirements
+
+- PHP 5.4 or greater
+- [Composer](https://getcomposer.org/) *(optional)*
+
+## Installing the Vendus SDK for PHP
+
+There are two methods to install the Vendus SDK for PHP. The recommended installation method is by using [Composer](#installing-with-composer-recommended). If are unable to use Composer for your project, you can still [install the SDK manually](#manually-installing) by downloading the source files and including the autoloader.
+
+## Installing with Composer (recommended)
+
+[Composer](https://getcomposer.org/) is the recommended way to install the Vendus SDK for PHP. Simply run the following in the root of your project.
+
+```
+composer require vendus/vendus-sdk-php
+```
+
+Once you do this, composer will edit your `composer.json` file and download the latest version of the SDK and put it in the `/vendor/` directory.
+
+Make sure to include the Composer autoloader at the top of your script.
+
+```php
+require_once __DIR__ . '/vendor/autoload.php';
+```
+
+## Manually installing
+
+First, download the source code and unzip it wherever you like in your project.
+
+Then include the autoloader provided in the SDK at the top of your script.
+
+```php
+require_once __DIR__ . '/path/to/vendus-php-sdk/src/autoload.php';
+```
+
+The autoloader should be able to auto-detect the proper location of the source code.
