@@ -19,13 +19,58 @@ The following examples demonstrate how you would accomplish common tasks with th
   - [Canceling a Payment](./examples/documents_receipt_cancel.md)
   - [Listing Payment Methods](./examples/documents_payment_methods.md)
   - [Listing Document Types](./examples/documents_document_types.md)
+
 - **Account and Users**
   - [Retrieving account details](./examples/account.md)
   - [Listing Users](./examples/account_users_list.md)
   - [Retrieving a User](./examples/account_user.md)
   - [Updating a User](./examples/account_user_update.md)
+
 - **Clients**
+  - [Creating a Client](./examples/clients_create.md)
   - [Listing Clients](./examples/clients_list.md)
   - [Retrieving a Client](./examples/clients_detail.md)
-  - [Updating a Client](./examples/clients_detail.md)
+  - [Updating a Client](./examples/clients_update.md)
 
+- **Products**
+  - [Creating a Product](./examples/products_create.md)
+  - [Listing Products](./examples/products_list.md)
+  - [Retrieving a Product](./examples/products_detail.md)
+  - [Updating a Product](./examples/products_update.md)
+
+  - Categories
+    - [Creating a Category](./examples/categories_create.md)
+    - [Listing Categories](./examples/categories_list.md)
+    - [Retrieving a Category](./examples/categories_detail.md)
+
+  - Brands
+    - [Creating a Brand](./examples/brands_create.md)
+    - [Listing Brands](./examples/brands_list.md)
+    - [Retrieving a Brand](./examples/brands_detail.md)
+
+  - Price Groups
+    - [Listing Price Groups](./examples/price_groups_list.md)
+    - [Retrieving a Price group](./examples/price_groups_detail.md)
+
+  - Units
+    - [Listing Units](./examples/units_list.md)
+    - [Retrieving a Unit](./examples/units_detail.md)
+
+- **Stores**
+  - [Listing Stores](./examples/stores_list.md)
+  - [Retrieving a Store](./examples/stores_detail.md)
+  - Registers
+    - [Listing Registers](./examples/registers_list.md)
+    - [Retrieving a Register](./examples/registers_detail.md)
+    - Movements
+      - [Listing Movements](./examples/registers_movements_list.md)
+      - [Create a Movement](./examples/registers_movements_create.md)
+
+- **Taxes**
+  - [Listing Taxes](./examples/taxes_list.md)
+  - [Listing Exemptions](./examples/taxes_exemptions_list.md)
+
+- **Discount Cards**
+    - [Creating a Discount Card](./examples/discount_card_create.md)
+    - [Listing Discount Cards](./examples/discount_card_list.md)
+    - [Retrieving a Discount Card](./examples/discount_card_detail.md)
