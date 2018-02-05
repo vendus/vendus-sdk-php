@@ -5,8 +5,7 @@
 ```php
 <?php
 
-$apiKey    = 'PUT_YOUR_API_KEY_HERE';
-$vendus    = new Vendus\Api($apiKey);
+$vendus    = new Vendus\Api('YOUR_API_KEY');
 $documents = $vendus->documents->list();
 
 ?>
@@ -17,8 +16,7 @@ $documents = $vendus->documents->list();
 ```php
 <?php
 
-$apiKey    = 'PUT_YOUR_API_KEY_HERE';
-$vendus    = new Vendus\Api($apiKey);
+$vendus    = new Vendus\Api('YOUR_API_KEY');
 $documents = $vendus->documents->list([
     'page'     => 2, 
     'per_page' => 5,
@@ -32,8 +30,7 @@ $documents = $vendus->documents->list([
 ```php
 <?php
 
-$apiKey    = 'PUT_YOUR_API_KEY_HERE';
-$vendus    = new Vendus\Api($apiKey);
+$vendus    = new Vendus\Api('YOUR_API_KEY');
 $filters   = [
     'since'  => '2018-01-01',
     'until'  => '2018-01-31',

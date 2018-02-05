@@ -5,8 +5,7 @@
 ```php
 <?php
 
-$apiKey = 'PUT_YOUR_API_KEY_HERE';
-$vendus = new Vendus\Api($apiKey);
+$vendus = new Vendus\Api('YOUR_API_KEY');
 $params = [
     'items' => [
         [

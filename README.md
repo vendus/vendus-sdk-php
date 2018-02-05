@@ -36,8 +36,7 @@ A basic example on how to get a list of documents:
 
 require 'vendor/autoload.php';
 
-$apiKey    = 'PUT_YOUR_API_KEY_HERE';
-$vendus    = new Vendus\Api($apiKey);
+$vendus    = new Vendus\Api('YOUR_API_KEY');
 $documents = $vendus->documents->list();
 
 ?>
