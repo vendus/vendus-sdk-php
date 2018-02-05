@@ -27,6 +27,20 @@ The best way to become familiar with how to use the SDK is to read the [Document
 
 We also have some [Examples](./docs/examples/) that may help you become familiar with the basic concepts.
 
+A basic example on how to get a list of documents:
+
+```php
+<?php
+
+require 'vendor/autoload.php';
+
+$apiKey    = 'PUT_YOUR_API_KEY_HERE';
+$vendus    = new Vendus\Api($apiKey);
+$documents = $vendus->documents->list();
+
+?>
+```
+
 ## Opening Issues
 
 If you encounter a bug with `vendus-sdk-php` we would like to hear about it. 
