@@ -27,7 +27,7 @@ The best way to become familiar with how to use the SDK is to read the [Document
 
 We also have some [Examples](./docs/examples/) that may help you become familiar with all the concepts.
 
-Basically, you start by instantiating `Vendus\Api`, then you specify an endpoind and finally you issue one of the methods available: `list`, `get`, `create` or `update`.
+Basically, you instantiate `Vendus\Api` and then, while specifying an endpoind, you issue one of the methods available: `list`, `get`, `create` or `update`.
 
 A basic example on how to get a list of documents:
 
