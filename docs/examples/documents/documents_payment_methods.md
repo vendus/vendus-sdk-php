@@ -21,8 +21,8 @@ Assuming there is a payment method with id `123`
 ```php
 <?php
 
-$vendus         = new Vendus\Api('YOUR_API_KEY');
-$paymentMethods = $vendus->documents->paymentmethods->get(123);
+$vendus        = new Vendus\Api('YOUR_API_KEY');
+$paymentMethod = $vendus->documents->paymentmethods->get(123);
 
 ?>
 ```
