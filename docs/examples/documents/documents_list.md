@@ -4,9 +4,11 @@
 
 ```php
 <?php
+
 $apiKey    = 'PUT_YOUR_API_KEY_HERE';
 $vendus    = new Vendus\Api($apiKey);
 $documents = $vendus->documents->list();
+
 ?>
 ```
 
@@ -14,8 +16,10 @@ $documents = $vendus->documents->list();
 
 ```php
 <?php
+
 $apiKey    = 'PUT_YOUR_API_KEY_HERE';
 $vendus    = new Vendus\Api($apiKey);
-$result = $vendus->documents->list(['page' => 2]);
+$documents = $vendus->documents->list(['page' => 2]);
+
 ?>
 ```
