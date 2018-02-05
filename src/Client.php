@@ -173,7 +173,7 @@ class Client
         curl_setopt($this->_curl, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($this->_curl, CURLOPT_CUSTOMREQUEST, $this->_method);
         curl_setopt($this->_curl, CURLOPT_HEADERFUNCTION,
-            function($curl, $header) use (&$headers) {
+            function($curl, $header) {
                 
                 $len    = strlen($header);
                 $header = explode(':', $header, 2);
