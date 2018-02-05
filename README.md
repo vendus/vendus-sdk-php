@@ -27,10 +27,6 @@ The best way to become familiar with how to use the SDK is to read the [Document
 
 We also have some [Examples](./docs/examples/) that may help you become familiar with the basic concepts.
 
-## Disclaimer
-
-This SDK is currenly being developed and should not be used in production. It will be ready in a couple of days.
-
 ## Opening Issues
 
 If you encounter a bug with `vendus-sdk-php` we would like to hear about it. 
