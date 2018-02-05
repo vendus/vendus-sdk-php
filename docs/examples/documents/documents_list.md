@@ -1,6 +1,8 @@
 # Listing Documents
 
-Below you will find a list of examples for common scenarios. To learn about all params available, please check our [API Reference](https://www.vendus.pt/ws/documents.doc).
+Below you will find a list of examples for common scenarios. 
+
+To learn about all params available, please check our [API Reference](https://www.vendus.pt/ws/documents.doc).
 
 ## Simple Call
 
