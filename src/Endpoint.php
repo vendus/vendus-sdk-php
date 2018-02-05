@@ -73,7 +73,7 @@ class Endpoint
 
         $this->_api = new Client();
         $this->_api->setEndpoint($this->_endpoint);
-        $this->_api->setApiKey('abdebedabeab');
+        $this->_api->setApiKey($this->_apiKey);
 
         return $this;
     }
