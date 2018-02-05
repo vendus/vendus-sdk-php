@@ -5,6 +5,7 @@
     "keywords": ["vendus","sdk","api"],
     "homepage": "https://www.vendus.pt/",
     "license": "MIT",
+    "minimum-stability" : "stable",
     "require": {
         "php": ">=5.4.0"
     },
