@@ -25,7 +25,7 @@ composer require vendus/vendus-sdk-php
 ## Using the SDK
 The best way to become familiar with how to use the SDK is to read the [Documentation](./docs/). 
 
-We also have some [Examples](./docs/examples/) that may help you become familiar with the basic concepts.
+We also have some [Examples](./docs/examples/) that may help you become familiar with all the concepts.
 
 A basic example on how to get a list of documents:
 
