@@ -19,7 +19,10 @@ $documents = $vendus->documents->list();
 
 $apiKey    = 'PUT_YOUR_API_KEY_HERE';
 $vendus    = new Vendus\Api($apiKey);
-$documents = $vendus->documents->list(['page' => 2, 'per_page' => 5]);
+$documents = $vendus->documents->list([
+    'page'     => 2, 
+    'per_page' => 5,
+]);
 
 ?>
 ```
