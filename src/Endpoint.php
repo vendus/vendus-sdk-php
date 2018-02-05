@@ -16,8 +16,11 @@ class Endpoint
         }
     }
 
-    public function list()
+    public function list($params=null)
     {
+        if($params) {
+            $this->_api->setParams($params);
+        }
         return $this->_api->get();
     }
 
