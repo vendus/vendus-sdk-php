@@ -14,7 +14,8 @@ $documents = $vendus->documents->list();
 
 ```php
 <?php
-$vendus = new Vendus\Api('abdebedabeab');
+$apiKey    = 'PUT_YOUR_API_KEY_HERE';
+$vendus    = new Vendus\Api($apiKey);
 $result = $vendus->documents->list(['page' => 2]);
 ?>
 ```
