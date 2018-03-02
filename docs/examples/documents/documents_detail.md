@@ -120,3 +120,64 @@ Array
     [hash] => lX1W
 )
 ```
+
+## Retrieving Printable Output
+If you want to retrieve a pdf, an html or an escpos version of the document, you may use `output` parameter to request it. Output is returned as a base64 encoded string. 
+
+Additionaly, if you want the output to include both original and a number a copies, you should use `copies` to specify it.
+
+```php
+<?php
+
+$vendus     = new Vendus\Api('YOUR_API_KEY');
+$documentId = 17949462;
+$params     = [
+    'output' => 'pdf', 
+    'copies' => 2
+];
+$document   = $vendus->documents->get($documentId);
+
+print_r($document);
+?>
+```
+```
+Array
+(
+    [id]     => 17949462
+    [type]   => FT
+    [number] => FT 01P2018/32
+    
+    ...
+
+    [hash]   => lX1W
+    [output] => G0AKG0AbYQEdKEyeAjBw ... aWEhChthMBtwAGD/G0r+G20=
+)
+```
+
+## Testing mode
+If you want to retrieve a document that was created while in test mode, you have to specify `mode` parameter as `tests`.
+```php
+<?php
+
+$vendus     = new Vendus\Api('YOUR_API_KEY');
+$documentId = 92941;
+$params     = [
+    'mode' => 'tests', 
+];
+$document   = $vendus->documents->get($documentId);
+
+print_r($document);
+?>
+```
+```
+Array
+(
+    [id]     => 92941
+    [type]   => FT
+    [number] => FT T01P2018/1
+    
+    ...
+
+    [hash]   => aBT6
+)
+```
