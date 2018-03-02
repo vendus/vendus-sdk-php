@@ -24,7 +24,7 @@ class Endpoint
         return $this->_api->get();
     }
 
-    public function get($id=null)
+    public function get($id=null, $params=null)
     {
         if(!$id) {
             return false;
@@ -34,6 +34,10 @@ class Endpoint
             $this->_api->setEdgeId($id);
         } else {
             $this->_api->setId($id);
+        }
+
+        if($params) {
+            $this->_api->setParams($params);
         }
 
         return $this->_api->get();
