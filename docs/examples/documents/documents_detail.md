@@ -133,7 +133,7 @@ $vendus     = new Vendus\Api('YOUR_API_KEY');
 $documentId = 17949462;
 $params     = [
     'output' => 'pdf', 
-    'copies' => 2
+    'copies' => 2,
 ];
 $document   = $vendus->documents->get($documentId);
 
