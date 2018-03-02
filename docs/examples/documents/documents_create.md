@@ -60,7 +60,7 @@ $document = $vendus->documents->create($params);
 
 ## Specifying a Client
 
-If client already exists, you may reference him using wither `id` or `fiscal_id`.
+If client already exists, you may reference him using either `id` or `fiscal_id`.
 
 ```php
 <?php
