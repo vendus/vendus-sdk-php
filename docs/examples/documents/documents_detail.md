@@ -1,4 +1,4 @@
-# Fetching a document
+# Fetching Documents
 
 Below you will find a list of examples for common scenarios. 
 
