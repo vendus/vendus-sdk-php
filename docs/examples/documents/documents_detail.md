@@ -17,7 +17,7 @@ $document   = $vendus->documents->get($documentId);
 print_r($document);
 ?>
 ```
-```php
+```
 Array
 (
     [id]                 => 17949462
@@ -119,5 +119,4 @@ Array
 
     [hash] => lX1W
 )
-
 ```
