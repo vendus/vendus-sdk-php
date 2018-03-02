@@ -5,11 +5,11 @@ All examples are made available here so that you can start using the SDK faster,
 The following examples demonstrate how you would accomplish common tasks with the Vendus SDK for PHP.
 
 - **Documents**
-  - [Creating Documents](./documents/documents_create.md)
+  - [Creating Invoices](./documents/documents_create.md)
   - [Fetching Documents](./documents/documents_detail.md)
   - [Registering Payments](./documents/documents_receipt.md) aka Creating a Receipt
   - [Listing Documents](./documents/documents_list.md)
-  - [Canceling Documents](./documents/documents_credit_note.md) aka Creating a Credit Note
+  - [Canceling Invoices](./documents/documents_credit_note.md) aka Creating a Credit Note
   - [Canceling Payments](./documents/documents_receipt_cancel.md)
   - [Listing Payment Methods](./documents/documents_payment_methods.md)
   - [Listing Document Types](./documents/documents_document_types.md)
