@@ -25,8 +25,7 @@ You may filter discount cards by `category` or current `status`, being `pending`
 
 $vendus  = new Vendus\Api('YOUR_API_KEY');
 $filters = [
-    'title'  => 'Food',
-    'status' => 'on',
+    'status' => 'pending',
 ];
 
 $discountcards = $vendus->discountcards->list($filters);
