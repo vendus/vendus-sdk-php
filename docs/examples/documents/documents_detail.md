@@ -122,7 +122,7 @@ Array
 ```
 
 ## Retrieving Printable Output
-If you want to retrieve a pdf, an html or an escpos version of the document, you may use `output` parameter to request it. Output is returned as a base64 encoded string. 
+If you want to retrieve a `pdf`, an `html` or an `escpos` version of the document, you may use `output` parameter to request it. Output is returned as a base64 encoded string. 
 
 Additionaly, if you want the output to include both original and a number a copies, you should use `copies` to specify it.
 

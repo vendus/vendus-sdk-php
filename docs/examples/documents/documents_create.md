@@ -81,7 +81,7 @@ $document = $vendus->documents->create($params);
 ?>
 ```
 
-If it is a new client, you may send full information about him and a new record will created.
+If it is a new client, you may send full information about him and a new record will be created.
 
 ```php
 <?php
@@ -147,5 +147,34 @@ Array
     [amount_gross]  => 76.50
     [amount_net]    => 62.20
     [hash]          => P0hh
+)
+```
+
+## Testing mode
+If you want to create a document in test mode, you have to specify `mode` parameter as `tests`.
+```php
+<?php
+
+$vendus     = new Vendus\Api('YOUR_API_KEY');
+$params     = [
+    'items' => [
+        ...
+    ],
+    'mode' => 'tests', 
+];
+
+$document = $vendus->documents->create($params);
+
+?>
+```
+Array
+(
+    [id]     => 92941
+    [type]   => FT
+    [number] => FT T01P2018/1
+    
+    ...
+
+    [hash]   => aBT6
 )
 ```
