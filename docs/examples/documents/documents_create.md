@@ -167,14 +167,24 @@ $document = $vendus->documents->create($params);
 
 ?>
 ```
-Array
-(
-    [id]     => 92941
-    [type]   => FT
-    [number] => FT T01P2018/1
-    
-    ...
 
-    [hash]   => aBT6
-)
+## Specifying payment methods
+If you specify at least one payment method, an `RG` will also be created to reflect the payment. Also, if you try to create a document of type `FR`, you will have to specify `payments` or you will get an error.
+
+```php
+<?php
+
+$vendus = new Vendus\Api('YOUR_API_KEY');
+$params = [
+    'items' => [
+        ...
+    ],
+    'payments' => [
+        ['id' => 24937, 'amount' => 123],
+    ],
+];
+
+$document = $vendus->documents->create($params);
+
+?>
 ```
