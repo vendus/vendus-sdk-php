@@ -18,7 +18,7 @@ class Endpoint
 
     public function list($params=null)
     {
-        if($params) {
+        if ($params) {
             $this->_api->setParams($params);
         }
         return $this->_api->get();
@@ -26,17 +26,17 @@ class Endpoint
 
     public function get($id=null, $params=null)
     {
-        if(!$id) {
+        if (!$id) {
             return false;
         }
 
-        if($this->_edge) {
+        if ($this->_edge) {
             $this->_api->setEdgeId($id);
         } else {
             $this->_api->setId($id);
         }
 
-        if($params) {
+        if ($params) {
             $this->_api->setParams($params);
         }
 
@@ -50,7 +50,7 @@ class Endpoint
 
     public function update($id, $params)
     {
-        if($this->_edge) {
+        if ($this->_edge) {
             $this->_api->setEdgeId($id);
         } else {
             $this->_api->setId($id);

@@ -118,15 +118,15 @@ class Client
     {
         $uriParts = [$this->_baseUrl . $this->_endpoint];
 
-        if(!empty($this->_id)) {
+        if (!empty($this->_id)) {
             $uriParts[] = $this->_id . '/';
         }
 
-        if(!empty($this->_edge)) {
+        if (!empty($this->_edge)) {
             $uriParts[] = $this->_edge . '/';
         }
 
-        if(!empty($this->_edgeId)) {
+        if (!empty($this->_edgeId)) {
             $uriParts[] = $this->_edgeId . '/';
         }
 
@@ -156,7 +156,7 @@ class Client
             }
         }
 
-        if($this->_host) {
+        if ($this->_host) {
             $headers[] = "Host: " . $this->_host;
         }
 
@@ -172,7 +172,9 @@ class Client
         curl_setopt($this->_curl, CURLOPT_USERPWD, $this->_apiKey);
         curl_setopt($this->_curl, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($this->_curl, CURLOPT_CUSTOMREQUEST, $this->_method);
-        curl_setopt($this->_curl, CURLOPT_HEADERFUNCTION,
+        curl_setopt(
+            $this->_curl, 
+            CURLOPT_HEADERFUNCTION,
             function($curl, $header) {
                 
                 $len    = strlen($header);
@@ -197,14 +199,14 @@ class Client
 
     private function _request($params=null)
     {
-        if($params) {
+        if ($params) {
             $this->setParams($params);
         }
 
         $this->_initUri();
         $this->_initCurl();
         
-        if(!$this->_execute()) {
+        if (!$this->_execute()) {
             return false;
         }
 
@@ -219,13 +221,12 @@ class Client
         $this->_extractResponseParts();
         
         if ($curlErrorCode = curl_errno($this->_curl)) {
-            curl_close($this->_curl);
-            throw new Exception(curl_error($this->_curl), $curlErrorCode);
+            throw new \Exception("Curl error: " . curl_error($this->_curl), $curlErrorCode);
         }
 
         curl_close($this->_curl);
 
-        if($this->_responseStatus!='200' && $this->_responseStatus!='201') {
+        if ($this->_responseStatus!='200' && $this->_responseStatus!='201') {
             return false;
         }
 
@@ -246,7 +247,7 @@ class Client
     {
         $body = $this->getResponseBody();
 
-        if(is_array($body) && !empty($body['errors'])) {
+        if (is_array($body) && !empty($body['errors'])) {
             return $body['errors'];
         }
 
@@ -256,7 +257,7 @@ class Client
     public function getResponseBody()
     {
         $jd = json_decode($this->_responseBody, true);
-        if(!empty($jd)) {
+        if (!empty($jd)) {
             return $jd;
         } else {
             return $this->_responseBody;
@@ -271,10 +272,10 @@ class Client
     private function _extractResponseParts()
     {
         $headers = $this->_responseHeaders;
-        $this->_responseBody    = $this->_response;
-        $this->_responseType    = !empty($headers['content-type']) ? $headers['content-type'] : 'text'; 
+        $this->_responseBody = $this->_response;
+        $this->_responseType = !empty($headers['content-type']) ? $headers['content-type'] : 'text'; 
 
-        if(strstr($this->_responseType , 'json'))  {
+        if (strstr($this->_responseType, 'json')) {
             $this->_data = json_decode($this->_responseBody, true);
         } else {
             $this->_data = $this->_responseBody;
