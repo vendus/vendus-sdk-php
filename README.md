@@ -7,10 +7,23 @@ By using this API, users can easily integrate third party software with Vendus.
 ## Sign up for a Vendus account
 Before starting, please signup for a [Vendus](https://www.vendus.pt/) account, if you haven't already, and retrieve your *API KEY*.
 
-## Minimum requirements
-To run the SDK, your system will need to meet some minimum requirements, including having **PHP >= 5.4**.
+## System requirements
 
-We highly recommend having it compiled with the cURL extension and cURL 7.16.2+ compiled with a TLS backend (e.g., NSS or OpenSSL).
+- Curl installed
+- PHP 5.4 or greater with curl and openssl enabled
+- [Composer](https://getcomposer.org/) *(optional)*
+
+## Additional requirements for Windows
+If you get errors like "SSL certificate error: unable to get local issuer certificate", you should follow these steps:
+- Download bundle certificate: https://curl.haxx.se/ca/cacert.pem.
+- Copy cacert.pem to a local folder - eg: c:\wamp\
+- Open your php.ini and add the following lines at the end
+
+curl.cainfo="C:/wamp/cacert.pem"
+openssl.cafile="C:/wamp/cacert.pem"
+
+- If your are using Wamp, besides editing the php.ini acessible through icon tray, also edit the file located at c:\wamp\bin\php\phpX.x.x\
+- Restart all services.
 
 ## Install the SDK
 Using [Composer](http://getcomposer.org) is the recommended way to install the Vendus SDK for PHP. 

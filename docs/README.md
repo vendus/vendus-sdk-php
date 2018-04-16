@@ -12,8 +12,21 @@ It would be advantageous to familiarize yourself with the concepts of [namespaci
 
 ## System requirements
 
-- PHP 5.4 or greater
+- Curl installed
+- PHP 5.4 or greater with curl and openssl enabled
 - [Composer](https://getcomposer.org/) *(optional)*
+
+## Additional requirements for Windows
+If you get errors like "SSL certificate error: unable to get local issuer certificate", you should follow these steps:
+- Download bundle certificate: https://curl.haxx.se/ca/cacert.pem.
+- Copy cacert.pem to a local folder - eg: c:\wamp\
+- Open your php.ini and add the following lines at the end
+
+curl.cainfo="C:/wamp/cacert.pem"
+openssl.cafile="C:/wamp/cacert.pem"
+
+- If your are using Wamp, besides editing the php.ini acessible through icon tray, also edit the file located at c:\wamp\bin\php\phpX.x.x\
+- Restart all services.
 
 ## Installing the Vendus SDK for PHP
 
