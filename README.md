@@ -24,7 +24,7 @@ curl.cainfo="C:/wamp/cacert.pem"
 openssl.cafile="C:/wamp/cacert.pem"
 ```
 
-- If your are using Wamp, besides editing the php.ini acessible through icon tray, also edit the file located at c:\wamp\bin\php\phpX.x.x\
+- If your are using Wamp, besides editing the php.ini acessible through the system tray, you also have to edit the file located at c:\wamp\bin\php\phpX.x.x\
 - Restart all services.
 
 ## Install the SDK
