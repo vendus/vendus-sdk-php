@@ -135,7 +135,7 @@ $params     = [
     'output' => 'pdf', 
     'copies' => 2,
 ];
-$document   = $vendus->documents->get($documentId);
+$document   = $vendus->documents->get($documentId, $params);
 
 print_r($document);
 ?>
@@ -164,7 +164,7 @@ $documentId = 92941;
 $params     = [
     'mode' => 'tests', 
 ];
-$document   = $vendus->documents->get($documentId);
+$document   = $vendus->documents->get($documentId, $params);
 
 print_r($document);
 ?>
