@@ -13,7 +13,7 @@ $vendus   = new Vendus\Api('YOUR_API_KEY');
 $clientId = 18169199;
 $client = $vendus->clients->get($clientId);
 
-print_r($document);
+print_r($client);
 ?>
 ```
 ```
